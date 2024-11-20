@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&amp;family=Creepster&amp;family=Oleo+Script+Swash+Caps:wght@400;700&amp;family=Press+Start+2P&amp;family=Satisfy&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AKANKSHA's Birthday Website</title>
+    <style>
+      /* CSS Styles */
+      body {
+        background: linear-gradient(69deg, #eb6e80, #e24e42);
+        background-size: 600% 600%;
+        animation: gradientBackground 10s ease infinite;
+        font-family: Arial, sans-serif;
+        display: grid;
+
+        /*        background:
+                      repeating-linear-gradient(45deg,
+                              #fecfef 0 $l, #ff9a9e   0 2.5*$l);
+              filter: drop-shadow(4px 4px 13px rgba(#000, .65))
+      }
+                      repeating-linear-gradient(45deg,
+                              #ff758c  0 $l,  #ff7eb3 0 2.5*$l);
+              filter: drop-shadow(4px 4px 13px rgba(#000, .65))
+      } */
+      }
+
+      @keyframes gradientBackground {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .banner {
+        background: rgba(255, 255, 255, 0.25);
+        background-image: linear-gradient(to right, #b4d8c0, #43c0f6);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        background-image: linear-gradient(to right, #ff00de, #00bcd4);
+        background-size: cover;
+        backdrop-filter: blur(10px);*/
+        border-radius: 20px;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Satisfy", cursive;
+      }
+
+      .banner h1 {
+        display: inline-block;
+        animation: neon 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes neon {
+        0% {
+          text-shadow: 0 0 5px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+        }
+        100% {
+          text-shadow: 0 0 5px #f50057, 0 0 20px #f50057, 0 0 30px #f50057;
+        }
+      }
+      .image-box {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .image-box img {
+        width: 200px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      }
+
+      .quotes-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+
+        background-color: #393d42;
+      }
+
+      .quote-box {
+        background-color: #393d42;
+        display: flex;
+        top: 20vh;
+        left: 50vw;
+        position: absolute;
+        display: flex;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        color: #fff;
+        font-style: italic;
+        animation: shine 2s infinite;
+        display: inline;
+        width: 90%;
+      }
+
+      .love-letter {
+        margin: 20px auto;
+        max-width: 600px;
+        text-align: justify;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #333;
+        font-family: "Segoe Script", cursive;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        font-family: "Pacifico", cursive;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .msg .love-letter:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 3px;
+        background-color: #ff00de;
+        animation: heartbeat 1.5s ease-in-out infinite;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+      .question-box {
+        margin: 20px auto;
+        max-width: 400px;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #333;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      strong {
+        background-image: linear-gradient(90deg, red, blue);
+        background-clip: text;
+        color: white;
+        margin: 10px;
+        font-family: "Monoton", cursive;
+        font-size: 23px;
+      }
+
+      .question-box h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .btn-yes,
+      .btn-no {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-yes {
+        background-color: #00bcd4;
+      }
+
+      .btn-no {
+        background-color: #f50057;
+      }
+      /* Dark Mode */
+      body.dark-mode {
+        background: linear-gradient(45deg, #333, #666, #999, #000);
+        background-size: 600% 600%;
+        animation: gradientBackgroundDark 10s ease infinite;
+        color: #fff;
+      }
+
+      @keyframes gradientBackgroundDark {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      body.dark-mode .banner {
+        background-image: linear-gradient(to right, #ff00de, #009688);
+      }
+
+      body.dark-mode .quote-box {
+        border-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      body.dark-mode .love-letter {
+        background-color: #333;
+        border-color: #fff;
+        color: #fff;
+      }
+      @keyframes shine {
+        30% {
+          border-image: linear-gradient(
+            10deg,
+            #f00,
+            #0f0,
+            #00f,
+            #ff0,
+            #0ff,
+            #f0f
+          );
+          border-image-slice: 1;
+        }
+        60% {
+          border-image: linear-gradient(
+            45deg,
+            #f00,
+            #050,
+            #00f,
+            #ff0,
+            #0ff,
+            #ff
+          );
+          border-image-slice: 1;
+        }
+        0% {
+          border-image: linear-gradient(
+            -45deg,
+            #f20,
+            #0f0,
+            #00f,
+            #ff0,
+            #0ff,
+            #f0f
+          );
+          border-image-slice: 1;
+        }
+        100% {
+          border-image: linear-gradient(
+            90deg,
+            #f00,
+            #0f0,
+            #00f,
+            #ff0,
+            #0ff,
+            #f0f
+          );
+          border-image-slice: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Happy birthday, Teddy ki Mummy!</h1>
+    </div>
+
+    <div class="image-box">
+      <img src="img2.jpg" alt="AK's Picture" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <clipPath id="heart-shape" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0.5,0C0.197,0,0,0.197,0,0.5c0,0.293,0.186,0.5,0.305,0.695c0.266,0.373,0.609,0.854,1.195,1.426 c1.063,0.947,2.715,2.251,3.5,2.79c0.785-0.539,2.437-1.843,3.5-2.79c0.586-0.572,0.929-1.053,1.195-1.426 C0.814,1,1,0.793,1,0.5C1,0.197,0.803,0,0.5,0z"
+          />
+        </clipPath>
+      </svg>
+    </div>
+
+    <div class="question-box">
+      <h3>Do you love me?</h3>
+      <button class="btn-yes">Yes</button>
+      <button class="btn-no" onclick="run()">No</button>
+    </div>
+
+    <div class="love-letter" style="display: none">
+      <h2>Letter to Shristi</h2>
+      <p>Dear AKANKSHA,</p>
+      <p>
+        Wishing you the happiest 17th birthday. May this day be as extraordinary
+        as you are.
+      </p>
+      <p>
+        Very Happy Birthday, meri pyaari Akanksha! 🥳💖 I hope God blesses you
+        with a healthy, happy, and successful life. 🌟 Grow, learn, earn—do
+        whatever you want in life. Live it to the fullest! ✨ Sending you lots
+        of warm wishes and love on your special day. May your life become even
+        more luminous. 💫 The theory of relativity feels true because it’s been
+        just a year with you, yet it feels like I’ve known you for an era. 🕰️
+        How delightful it is to think that you went from being an unknown person
+        to becoming the love of my life. ❤️ I am truly grateful to God for
+        giving me the strength and patience to keep my hopes alive. The feelings
+        I have for you have always been exponential and pure. 💞 I cannot
+        describe the days I spent clinging to a particle of hope, waiting for
+        you to message me so I could become closer to you. 📩 Throughout this
+        journey, I knew my intentions and feelings were absolutely holy and
+        pure—and that’s why the outcome feels so special. 🕊️ Having you by my
+        side feels like winning at life. 🏆 My dear, you are my pole star on a
+        gloomy night. ⭐ While going through the toughest phase of my life, I
+        found happiness in you. 🌸 Your charming behavior, giggles, and
+        melodious voice worked like a healing frequency for me. 🎶 Regardless of
+        how tired, sad, or worried I am, your presence never fails to work its
+        magic. 🪄 I was totally unaware of when I fell so deeply in love with
+        you. Now, not only are you in my heart, but you also dwell in my smile,
+        my prayers, and even my tears. 😘 That’s what makes you so special. I
+        know it’s hard to believe someone can fall in love so early and without
+        even meeting, but I did. 💌 Your stunning personality reignited feelings
+        in a heartbroken soul like mine. 💔 I didn’t make this decision in a
+        hurry, nor was it guided by lust. I took my time and realized this is
+        not just attraction—it’s the purest form of love that exists among
+        earthly beings. 🌍 Even now, as I write this at midnight, those deep,
+        dark, hypnotizing eyes are mesmerizing me. 👁️✨ Unfortunately, even the
+        most expensive mirror could never reflect your perfection. 💎 “Aapka
+        noor dekh ke chaand bhi sharma jaaye.” 🌝🙈 Your beauty may fade with
+        time, but my love for you will never diminish. ❤️ You’re still so young,
+        and I know you have plans and dreams for the future. 🗺️ I’m sometimes
+        afraid you might change your mind or find someone else, which could
+        devastate me. 😔 But even so, I’d only wish for your happiness. True
+        love, like your father’s for your mother, never dies—it only grows
+        stronger with time. 💐 She is always with us, blessing us. 🌈 On this
+        special day, I am incredibly thankful to your parents for giving birth
+        to a gem like you 17 years ago. 🥹 Their blessings will always be with
+        you—and, if I’m lucky, with our bond as well. 🌸 My better half, you are
+        truly God’s child. 🕊️ The world doesn’t know how to treat someone as
+        precious as you, but I promise to give you all the joy, care, and
+        affection you deserve. 💖 Loving you as my wife, respecting you as my
+        mother, and protecting you as my daughter—these are my life’s greatest
+        purposes. 🥰 Till my last breath, I’ll try to make your smile last for
+        eternity. 🌹 Please promise me you’ll be mine forever. 💍 But if your
+        happiness lies elsewhere, I’ll accept it—even if it breaks me. 💔 I LOVE
+        YOU, AKANKSHA. “Jaise mujhe tumse hua hai, yeh pyaar na hoga dobaara.”
+        🌌 Feel lucky you’ve got me, 😉 because I’ll dedicate my life to making
+        yours cheerful and delightful. 🎉 Lastly, I’ll end with: “Maine chode
+        hai baaki saare raste, bas aaya hoon tere paas re.” 🎶 It’s now your
+        choice if you’ll walk with me toward a life filled with love and
+        happiness. 🌺 Again, Happy 17th, my pretty soulmate! 🎂✨ Softy is
+        getting older! Hehe! 😄 You owe me a forehead kiss. 😘
+      </p>
+      <p>yours,</p>
+      <p>Aishik</p>
+      <br /><strong
+        >"Muskurana Bhi Tujhise sikha hai dil lagane ka tu hi tareeka
+        hai"</strong
+      >
+    </div>
+
+    <div class="quotes-container">
+      <!-- <div class="quote-box">"Love is not just looking at each other, it's looking in the same direction." - Antoine de Saint-Exupéry</div>
+    <div class="quote-box">"The best thing to hold onto in life is each other." - Audrey Hepburn</div>-->
+      <div class="quote-box">
+        "From strangers to soulmates 💑, a year of love and connection that
+        knows no bounds 🌟. Though miles apart 🛤️, our hearts beat as one ❤️.
+        Happy Birthday, my love 🎂🥳. Here's to many more moments of magic ✨
+        and closeness 🤗, no matter the distance!"
+      </div>
+    </div>
+
+    <!-- JavaScript for toggling dark mode, displaying love letter, and handling question buttons -->
+    <script>
+      const body = document.querySelector("body");
+      const banner = document.querySelector(".banner");
+      const questionBox = document.querySelector(".question-box");
+      const loveLetter = document.querySelector(".love-letter");
+      const quotesContainer = document.querySelector(".quotes-container");
+
+      function toggleDarkMode() {
+        body.classList.toggle("dark-mode");
+      }
+
+      function showLoveLetter() {
+        questionBox.style.display = "none";
+        loveLetter.style.display = "block";
+        quotesContainer.style.display = "block";
+      }
+
+      const btnYes = document.querySelector(".btn-yes");
+      const btnNo = document.querySelector(".btn-no");
+
+      btnYes.addEventListener("click", showLoveLetter);
+      btnNo.addEventListener("click", function () {
+        alert("That's okay. Take your time!");
+        window.location.href = "https://aishikmondal.github.io/iloveyouAk";
+      });
+    </script>
+  </body>
+</html>
